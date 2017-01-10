@@ -61,7 +61,6 @@ void motorsClaw(power) {
 // Functions to drive, pivot, lift, etc...
 
 // Main function to drive in direction specified...
-
 void go(int way, int distance, int velocity, int minPower) {
 	imeReset(IME_BL);
 	imeReset(IME_BR);
