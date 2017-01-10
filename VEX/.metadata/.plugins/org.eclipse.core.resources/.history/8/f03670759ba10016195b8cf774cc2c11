@@ -1,0 +1,110 @@
+#include "main.h"
+
+int clawTick;
+
+void readPot(void *ignore) {
+	analogCalibrate(1);
+	while (true) {
+		clawTick = analogRead(1);
+
+		lcdPrint(uart1, 2, "@Gyro %d", clawTick);
+	}
+}
+
+void clearDrive() {
+	motorSet(2, 0); // Front Right Drive
+	motorSet(1, 0); // Back Right
+	motorSet(4, 0); // Front Left
+	motorSet(10, 0); // Back Left
+}
+
+void driveForward(int time) {
+	motorSet(2, -127); // Front Right Drive
+	motorSet(1, 127); // Back Right
+	motorSet(4, 127); // Front Left
+	motorSet(10, -127); // Back Left
+	delay(time);
+	clearDrive();
+}
+
+void driveRight(int time) {
+	motorSet(2, 127); // Front Right Drive
+	motorSet(1, 127); // Back Right
+	motorSet(4, 127); // Front Left
+	motorSet(10, 127); // Back Left
+	delay(time);
+	clearDrive();
+}
+
+void driveLeft(int time) {
+	motorSet(2, -127); // Front Right Drive
+	motorSet(1, -127); // Back Right
+	motorSet(4, -127); // Front Left
+	motorSet(10, -127); // Back Left
+	delay(time);
+	clearDrive();
+}
+
+void driveBack() {
+	motorSet(2, 127); // Front Right Drive
+	motorSet(1, -127); // Back Right
+	motorSet(4, -127); // Front Left
+	motorSet(10, 127); // Back Left
+}
+
+void programmingSkills() {
+	int gyroTick = gyroGet(gyro);
+	lcdClear(uart1);
+	lcdPrint(uart1, 2, "@Gyro %d", gyroTick);
+	gyroReset(gyro);
+
+	while (1) {
+		// driveBack();
+
+		while (gyroTick > -90) {
+			motorSet(2, 127); // Front Right Drive
+			motorSet(1, -127); // Back Right
+			motorSet(4, 127); // Front Left
+			motorSet(10, -127); // Back Left
+		}
+		clearDrive();
+
+		// driveForward();
+		delay(500);
+	}
+}
+
+void closeClaw(int time) {
+
+
+	/* motorSet(3, 120);
+	motorSet(9, -120);
+	delay(500);
+	motorSet(3, 0);
+	motorSet(9, 0); */
+}
+
+void matchAuto() {
+	int gyroTick = gyroGet(gyro);
+
+	driveRight(500);
+	closeClaw(500);
+
+}
+
+void autonomous() {
+	// programmingSkills();
+	// taskCreate(readPot, TASK_DEFAULT_STACK_SIZE, NULL, TASK_PRIORITY_DEFAULT);
+	lcdClear(uart1);
+	gyroReset(gyro);
+	analogCalibrate(1);
+		int gyroTick = gyroGet(gyro);
+		int tick = 0;
+		while (tick < 1000) {
+			motorSet(3, 120);
+			motorSet(9, -120);
+			int tick = analogRead(1);
+		}
+		motorSet(3, 0);
+			motorSet(9, -0);
+}

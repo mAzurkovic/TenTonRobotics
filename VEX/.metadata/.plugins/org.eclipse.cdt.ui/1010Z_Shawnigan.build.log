@@ -1,0 +1,6 @@
+02:19:05 **** Incremental Build of configuration Default for project 1010Z_Shawnigan ****
+make all 
+make[1]: Nothing to be done for `all'.
+
+02:19:05 Build Finished (took 297ms)
+

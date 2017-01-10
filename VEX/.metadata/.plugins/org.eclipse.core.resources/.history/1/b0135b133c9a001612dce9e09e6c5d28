@@ -1,0 +1,62 @@
+#include "main.h"
+#include <stdlib.h>
+
+#define THRESHOLD 20
+
+void operatorControl() {
+	while (1) {
+
+		#include "main.h"
+
+		void operatorControl() {
+
+			int ch1;
+			int ch3;
+			int ch4;
+
+			while (1) {
+
+				// Master Joystick Channels...
+				int joy1 = joystickGetAnalog(1, 1);
+				int joy2 = joystickGetAnalog(1, 2);
+				int joy3 = joystickGetAnalog(1, 3);
+				int joy4 = joystickGetAnalog(1, 4);
+
+				// Calculate THRESHOLD: This will prevent unwanted movements
+				/*if (abs(joystickGetAnalog(1, 4)) > THRESHOLD) {
+					ch4 = joystickGetAnalog(1, 4);
+				} else {
+					ch4 = 0;
+				}
+
+				if (abs(joystickGetAnalog(1, 3)) > THRESHOLD) {
+					ch3 = joystickGetAnalog(1, 3);
+				} else {
+					ch3 = 0;
+				}
+
+				if (abs(joystickGetAnalog(1, 1)) > THRESHOLD) {
+					ch1 = joystickGetAnalog(1, 1);
+				} else {
+					ch1 = 0;
+				} */
+
+				// Holonomic Drive Calculations...
+				motorSet(2, -(joy3 - joy1 - joy4)); // Front Right Drive
+				motorSet(3, -(joy3 - joy1 + joy4)); // Back Right
+				motorSet(4, (joy3 + joy1 + joy4)); // Front Left
+				motorSet(5, (joy3 + joy1 - joy4)); // Back Left
+
+				// motorSet(2, -(ch3 - ch1 - ch4)); // Front Right Drive
+				// motorSet(3, -(ch3 - ch1 + ch4)); // Back Right
+				//motorSet(4, (ch3 + ch1 + ch4)); // Front Left
+				//motorSet(5, (ch3 + ch1 - ch4)); // Back Left
+
+				delay(20);
+			}
+		}
+
+
+		delay(20);
+	}
+}

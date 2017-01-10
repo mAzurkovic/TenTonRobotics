@@ -1,0 +1,23 @@
+/*
+ * compDefaults.h
+ *
+ *  Created on: Sep 21, 2016
+ *      Author: Mattias
+ *
+ *      Holds default competition methods for simple tasks
+ */
+
+#ifndef SRC_COMPDEFAULTS_H_
+#define SRC_COMPDEFAULTS_H_
+
+void _motorWipe() {
+	for (int i = 1; i < 13; i++) {
+		motorSet(i, 0);
+	}
+}
+
+void _motorClear(int port) {
+	motorSet(port, 0);
+}
+
+#endif /* SRC_COMPDEFAULTS_H_ */

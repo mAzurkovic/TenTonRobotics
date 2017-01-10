@@ -1,0 +1,132 @@
+#include "main.h"
+#include "compDefaults.h"
+
+#define PROPORTION 0.01
+#define INTEGRAL 0.0
+#define DERIVATIVE 0.0
+
+// Manual controls to lift reverse 4 bar
+void lift() {
+	if (joystickGetDigital(1, 6, JOY_UP)) {
+		motorSet(2, 127);
+		motorSet(3, -127);
+		motorSet(4, -127);
+		motorSet(5, 127);
+	} else if (joystickGetDigital(1, 6, JOY_DOWN)) {
+		motorSet(2, -127);
+		motorSet(3, 127);
+		motorSet(4, 127);
+		motorSet(5, -127);
+	} else {
+		motorSet(2, 0);
+		motorSet(3, 0);
+		motorSet(4, 0);
+		motorSet(5, 0);
+	}
+}
+
+void liftPID(void *ignore) {
+	// Target tick count for potentiometer (how high we want it)
+	float targetLeft = 269;
+	float targetRight = 265;
+
+	// Total accumuated error
+	float errTotalLeft;
+	float errTotalRight;
+
+	float errLastLeft;
+	float errLastRight;
+
+	// Current proportion terms for each side of lift
+	float propLeft;
+	float propRight;
+
+	float integLeft;
+	float integRight;
+
+	float derivLeft;
+	float derivRight;
+
+	// Threshold that manages when to activate the INTEGRAL portion
+	int integAccumulate = 100;
+	float integCap = 50 / INTEGRAL;
+
+	// Motor out puts for each side of lift towers
+	float outputLeft;
+	float outputRight;
+
+	while (1) {
+		// Initialize the raw potentiometer input
+		int currTickRight = analogRead(3);
+		int currTickLeft = analogRead(2) / 10;
+
+		// printf("Pot LEFT: %d", currTickLeft);
+		// printf("Pot RIGHT: %d", currTickRight);
+
+		int errLeft = targetLeft - currTickLeft;
+		int errRight = targetRight - currTickRight;
+
+		// Manage the INTEGRAL term (only use if close/approaching target)
+		if (errLeft < integAccumulate) { errTotalLeft += errLeft; }
+		else { errTotalLeft = 0; }
+		if (errRight < integAccumulate) { errTotalRight += errRight; }
+		else { errTotalLeft = 0; }
+
+		// INTEGRAL cap (by standard 50 / INTEGRAL term
+		if (errTotalLeft > integCap) { errTotalLeft = 50 / INTEGRAL; }
+		if (errTotalRight > integCap) { errTotalRight = 50 / INTEGRAL; }
+		// Compute P, I, and D terms for both right and left side of lift
+		propLeft = errLeft * PROPORTION;
+		propRight = errRight * PROPORTION;
+
+		integLeft = errTotalLeft * INTEGRAL;
+		integRight = errTotalRight * INTEGRAL;
+
+		derivLeft = (errTotalLeft - errLastLeft) * DERIVATIVE;
+		derivRight = (errTotalRight - errLastRight) * DERIVATIVE;
+
+		errLastLeft = errLeft;
+		errLastRight = errRight;
+
+		// Set motor output as sum of P, I, and D terms
+		outputLeft = propLeft + integLeft + derivLeft;
+		outputRight = propRight + integRight + derivRight;
+
+		printf("Prop LEFT: %d", propLeft);
+		printf("Prop RIGHT: %d", propRight);
+
+		if (joystickGetDigital(1, 6, JOY_UP)) {
+			motorSet(2, outputRight);
+			motorSet(3, -outputRight);
+			motorSet(4, -outputLeft);
+			motorSet(5, outputRight);
+		} else {
+			motorSet(2, 0);
+			motorSet(3, 0);
+			motorSet(4, 0);
+			motorSet(5, 0);
+		}
+
+		// Refresh @25
+		delay(25);
+	}
+}
+
+
+
+void operatorControl() {
+
+	_motorWipe();
+
+	analogCalibrate(3);
+	analogCalibrate(2);
+
+	while (true) {
+		// lift();
+		_driveTank(6, 7, 8, 9);
+
+	    taskCreate(liftPID, TASK_DEFAULT_STACK_SIZE, NULL, TASK_PRIORITY_DEFAULT);
+
+		delay(25);
+	}
+}

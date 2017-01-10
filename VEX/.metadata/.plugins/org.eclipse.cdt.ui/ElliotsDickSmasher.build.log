@@ -1,0 +1,6 @@
+16:21:59 **** Incremental Build of configuration Default for project ElliotsDickSmasher ****
+make all 
+make[1]: Nothing to be done for `all'.
+
+16:21:59 Build Finished (took 313ms)
+

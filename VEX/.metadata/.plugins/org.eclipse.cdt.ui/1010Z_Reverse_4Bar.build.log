@@ -1,0 +1,22 @@
+23:41:55 **** Build of configuration Default for project 1010Z_Reverse_4Bar ****
+make all 
+CC -I../include -I../src init.c
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'liftPID':
+opcontrol.c:104:3: warning: format '%d' expects argument of type 'int', but argument 4 has type 'double' [-Wformat]
+opcontrol.c:57:8: warning: variable 'outputRight' set but not used [-Wunused-but-set-variable]
+opcontrol.c:53:8: warning: unused variable 'integCap' [-Wunused-variable]
+opcontrol.c:52:6: warning: unused variable 'integAccumulate' [-Wunused-variable]
+opcontrol.c:49:8: warning: variable 'derivRight' set but not used [-Wunused-but-set-variable]
+opcontrol.c:48:8: warning: variable 'derivLeft' set but not used [-Wunused-but-set-variable]
+opcontrol.c:46:8: warning: variable 'integRight' set but not used [-Wunused-but-set-variable]
+opcontrol.c:45:8: warning: variable 'integLeft' set but not used [-Wunused-but-set-variable]
+opcontrol.c:87:13: warning: 'errTotalLeft' is used uninitialized in this function [-Wuninitialized]
+opcontrol.c:88:14: warning: 'errTotalRight' is used uninitialized in this function [-Wuninitialized]
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  18912	      0	   3856	  22768	   58f0	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+
+23:41:58 Build Finished (took 3s.419ms)
+

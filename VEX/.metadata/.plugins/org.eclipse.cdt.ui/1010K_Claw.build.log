@@ -1,0 +1,16 @@
+23:48:58 **** Incremental Build of configuration Default for project 1010K_Claw ****
+make all 
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'clawPID':
+opcontrol.c:40:8: warning: unused variable 'integCap' [-Wunused-variable]
+opcontrol.c:39:6: warning: unused variable 'integAccumulate' [-Wunused-variable]
+opcontrol.c:36:8: warning: variable 'deriv' set but not used [-Wunused-but-set-variable]
+opcontrol.c:35:8: warning: variable 'integ' set but not used [-Wunused-but-set-variable]
+opcontrol.c:66:9: warning: 'errTotal' is used uninitialized in this function [-Wuninitialized]
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  16248	      0	   3936	  20184	   4ed8	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+
+23:48:58 Build Finished (took 532ms)
+

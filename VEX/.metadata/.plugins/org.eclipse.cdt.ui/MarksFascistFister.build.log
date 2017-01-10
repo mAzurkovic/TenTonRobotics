@@ -1,0 +1,14 @@
+22:24:59 **** Build of configuration Default for project MarksFascistFister ****
+make all 
+CC -I../include -I../src auto.c
+CC -I../include -I../src init.c
+CC -I../include -I../src opcontrol.c
+opcontrol.c: In function 'operatorControl':
+opcontrol.c:34:7: warning: unused variable 'joyStick' [-Wunused-variable]
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  12092	      0	   3840	  15932	   3e3c	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+
+22:25:03 Build Finished (took 3s.94ms)
+

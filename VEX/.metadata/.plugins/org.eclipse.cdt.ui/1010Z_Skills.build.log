@@ -1,0 +1,6 @@
+22:52:25 **** Incremental Build of configuration Default for project 1010Z_Skills ****
+make all 
+make[1]: Nothing to be done for `all'.
+
+22:52:25 Build Finished (took 251ms)
+

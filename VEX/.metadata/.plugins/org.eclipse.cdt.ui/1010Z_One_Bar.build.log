@@ -1,0 +1,7 @@
+23:00:37 **** Clean-only build of configuration Default for project 1010Z_One_Bar ****
+make clean 
+rm -f ./bin/output.elf
+rm -rf ./bin
+
+23:00:38 Build Finished (took 157ms)
+
