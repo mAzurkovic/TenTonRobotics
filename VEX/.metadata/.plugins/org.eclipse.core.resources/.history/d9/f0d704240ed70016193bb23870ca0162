@@ -134,12 +134,6 @@ void operatorControl();
 
 Encoder encLift;
 
-extern Gyro gyro;
-extern int program;
-
-#define IME_BL 1
-#define IME_BR 0
-
 // Lift motor ports
 
 // End C++ export structure

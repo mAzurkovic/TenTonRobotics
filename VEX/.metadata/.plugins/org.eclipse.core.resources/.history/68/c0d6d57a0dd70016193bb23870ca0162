@@ -19,6 +19,7 @@
 
 #define THRESHOLD 20
 
+
 void setLift(int speed) {
 	// Right side
 	motorSet(R_BOT_LIFT, (speed));
@@ -38,6 +39,7 @@ void lift() {
 	}
 }
 
+
 void claw() {
 	if (joystickGetDigital(2, 5, JOY_UP)) {
 		motorSet(CLAW_RIGHT, 120);
@@ -52,10 +54,11 @@ void claw() {
 }
 
 void operatorControl() {
+
 	// Claw Closed POT Value = 3100;
 	// Claw Opened POT Value = 700;
 	analogCalibrate(1);
-	// Lift encoder Top = 680;
+	// Lift enocder Top = 680;
 	encoderReset(encLift);
 
 	while (true) {

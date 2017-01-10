@@ -101,10 +101,10 @@ void go(int way, int distance, int velocity, int minPower) {
 			outputBR = -(minPower + (errBR * gain));
 		}
 
-		motorSet(FRONT_RIGHT, outputFR);
-		motorSet(BACK_RIGHT, outputBR);
-		motorSet(FRONT_LEFT, outputFL);
-		motorSet(BACK_LEFT, outputBL);
+		motorSet(2, -(outputFR));
+		motorSet(1, (outputBR));
+		motorSet(4, (outputFL));
+		motorSet(10, -(outputBL)); // BL, was BR
 
 		delay(50);
 	}

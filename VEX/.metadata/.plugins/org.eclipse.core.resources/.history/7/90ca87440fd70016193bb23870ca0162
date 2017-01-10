@@ -93,18 +93,22 @@ void go(int way, int distance, int velocity, int minPower) {
 		errBR = velocity - tickChangeBR;
 
 		if (way == 1) {
+			outputFL = minPower + (errFL * gain);
+			outputFR = minPower + (errFR * gain);
 			outputBL = minPower + (errBL * gain);
 			outputBR = minPower + (errBR * gain);
 		}
 		if (way == 2) { // Backwards
+			outputFL = -(minPower + (errFL * gain));
+			outputFR = -(minPower + (errFR * gain));
 			outputBL = -(minPower + (errBL * gain));
 			outputBR = -(minPower + (errBR * gain));
 		}
 
-		motorSet(FRONT_RIGHT, outputFR);
-		motorSet(BACK_RIGHT, outputBR);
-		motorSet(FRONT_LEFT, outputFL);
-		motorSet(BACK_LEFT, outputBL);
+		motorSet(2, -(outputFR));
+		motorSet(1, (outputBR));
+		motorSet(4, (outputFL));
+		motorSet(10, -(outputBL)); // BL, was BR
 
 		delay(50);
 	}
