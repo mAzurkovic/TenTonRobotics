@@ -1,6 +1,11 @@
-22:52:25 **** Incremental Build of configuration Default for project 1010Z_Skills ****
+19:31:31 **** Incremental Build of configuration Default for project 1010Z_Skills ****
 make all 
-make[1]: Nothing to be done for `all'.
+CC -I../include -I../src init.c
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  15944	      0	   4328	  20272	   4f30	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
 
-22:52:25 Build Finished (took 251ms)
+19:31:32 Build Finished (took 782ms)
 

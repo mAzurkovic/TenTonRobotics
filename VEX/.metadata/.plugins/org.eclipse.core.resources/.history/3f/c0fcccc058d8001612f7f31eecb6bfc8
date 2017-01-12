@@ -1,0 +1,6 @@
+#include "main.h"
+
+
+void autonomous() {
+	motorSet(2, 120);
+}

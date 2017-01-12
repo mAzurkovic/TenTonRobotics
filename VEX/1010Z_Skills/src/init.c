@@ -39,6 +39,6 @@ void initializeIO() {
 void initialize() {
 
 	encLift = encoderInit(LIFT_ENC_TOP, LIFT_ENC_BOT, true);
-
-
+	encLeft = encoderInit(7, 8, true);
+	encRight = encoderInit(5, 6, true);
 }

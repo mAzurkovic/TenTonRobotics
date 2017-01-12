@@ -1,0 +1,16 @@
+#include "main.h"
+#include "autoDefaults.h"
+
+void programmingSkills() {
+	motorsDrive(127);
+}
+
+
+void autonomous() {
+	printf("GOING");
+
+	TaskHandle clawTaskHandler = taskCreate(timeClaw, TASK_DEFAULT_STACK_SIZE, NULL, TASK_PRIORITY_DEFAULT);
+
+	sensorReset();
+	motorSet(2, 120);
+}

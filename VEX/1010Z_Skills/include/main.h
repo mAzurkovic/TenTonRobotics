@@ -134,11 +134,14 @@ void operatorControl();
 
 Encoder encLift;
 
+Encoder encRight;
+Encoder encLeft;
+
 extern Gyro gyro;
 extern int program;
 
-#define IME_BL 1
-#define IME_BR 0
+#define IME_L 1
+#define IME_R 0
 
 // Lift motor ports
 

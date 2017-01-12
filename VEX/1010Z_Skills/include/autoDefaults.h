@@ -55,57 +55,28 @@ void motorsLift(power) {
 
 void motorsClaw(power) {
 	motorSet(CLAW_RIGHT, power);
-	motorSet(CLAW_LEFT, -(power);
+	motorSet(CLAW_LEFT, -(power));
 }
 
 // Functions to drive, pivot, lift, etc...
 
 // Main function to drive in direction specified...
 
-void go(int way, int distance, int velocity, int minPower) {
-	imeReset(IME_BL);
-	imeReset(IME_BR);
+void drive(int distance) {
+	imeReset(IME_L);
+	imeReset(IME_R);
 
-	float outputFL, outputFR, outputBL, outputBR;
+	int imeValR;
+	int imeValL;
 
-	float gain = 0.15;
+	while ( (abs(imeGet(IME_L, &imeValL)) + abs(imeGet(IME_R, &imeValR)) / 2) < distance ) {
 
-	float tickChangeBL;
-	float tickChangeBR;
+		printf("hdhd %d", abs(imeGet(IME_L, &imeValL)));
 
-	float tickLastBL = 0;
-	float tickLastBR = 0;
-
-	float errBL;
-	float errBR;
-
-	int imeValBL;
-	int imeValBR;
-
-	while ( (abs(imeGet(IME_BL, &imeValBL)) + abs(imeGet(IME_BR, &imeValBR)) / 2) < distance ) {
-
-		tickChangeBL = abs(imeGet(IME_BL, &imeValBL)*(360/261.333)) - tickLastBL;
-		tickChangeBR = abs(imeGet(IME_BR, &imeValBL)*(360/261.333)) - tickLastBR;
-
-		tickLastBL = abs(imeGet(IME_BL, &imeValBL)*(360/261.333));
-		tickLastBR = abs(imeGet(IME_BR, &imeValBR)*(360/261.333));
-
-		errBL = velocity - tickChangeBL;
-		errBR = velocity - tickChangeBR;
-
-		if (way == 1) {
-			outputBL = minPower + (errBL * gain);
-			outputBR = minPower + (errBR * gain);
-		}
-		if (way == 2) { // Backwards
-			outputBL = -(minPower + (errBL * gain));
-			outputBR = -(minPower + (errBR * gain));
-		}
-
-		motorSet(FRONT_RIGHT, outputFR);
-		motorSet(BACK_RIGHT, outputBR);
-		motorSet(FRONT_LEFT, outputFL);
-		motorSet(BACK_LEFT, outputBL);
+		motorSet(FRONT_RIGHT, 127);
+		motorSet(BACK_RIGHT, -(127));
+		motorSet(FRONT_LEFT, 127);
+		motorSet(BACK_LEFT, 127);
 
 		delay(50);
 	}

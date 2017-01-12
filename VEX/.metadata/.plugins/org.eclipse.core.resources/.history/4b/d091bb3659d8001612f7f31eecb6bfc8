@@ -1,0 +1,13 @@
+#include "main.h"
+#include "autoDefaults.h"
+
+void programmingSkills() {
+	motorsDrive(127);
+}
+
+
+void autonomous() {
+	printf("GOING");
+	sensorReset();
+	motorSet(2, 120);
+}

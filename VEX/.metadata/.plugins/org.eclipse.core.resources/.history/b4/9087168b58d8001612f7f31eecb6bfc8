@@ -1,0 +1,12 @@
+#include "main.h"
+#include "autoDefaults.h"
+
+void programmingSkills() {
+	motorsDrive(127);
+}
+
+
+void autonomous() {
+	sensorReset();
+	programmingSkills();
+}

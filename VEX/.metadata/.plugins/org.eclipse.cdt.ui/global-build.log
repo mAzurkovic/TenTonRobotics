@@ -23208,3 +23208,633 @@ arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
 22:52:25 **** Incremental Build of configuration Default for project 1010Z_Skills ****
 make all 
 make[1]: Nothing to be done for `all'.
+15:44:47 **** Incremental Build of configuration Default for project 1010Z_Skills ****
+make all 
+CC -I../include -I../src auto.c
+In file included from auto.c:2:0:
+../include/autoDefaults.h: In function 'motorsDrive':
+../include/autoDefaults.h:28:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsPivot':
+../include/autoDefaults.h:35:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsLift':
+../include/autoDefaults.h:49:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsClaw':
+../include/autoDefaults.h:56:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h:58:30: error: expected ')' before ';' token
+../include/autoDefaults.h:59:1: error: expected ';' before '}' token
+make[1]: *** [../bin/auto.o] Error 1
+make: *** [src] Error 2
+15:45:11 **** Incremental Build of configuration Default for project 1010Z_Skills ****
+make all 
+CC -I../include -I../src auto.c
+In file included from auto.c:2:0:
+../include/autoDefaults.h: In function 'motorsDrive':
+../include/autoDefaults.h:28:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsPivot':
+../include/autoDefaults.h:35:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsLift':
+../include/autoDefaults.h:49:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsClaw':
+../include/autoDefaults.h:56:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'go':
+../include/autoDefaults.h:105:11: warning: 'outputFR' may be used uninitialized in this function [-Wuninitialized]
+../include/autoDefaults.h:107:11: warning: 'outputFL' may be used uninitialized in this function [-Wuninitialized]
+../include/autoDefaults.h:106:11: warning: 'outputBR' may be used uninitialized in this function [-Wmaybe-uninitialized]
+../include/autoDefaults.h:108:11: warning: 'outputBL' may be used uninitialized in this function [-Wmaybe-uninitialized]
+CC -I../include -I../src init.c
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  15576	      0	   3944	  19520	   4c40	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+15:45:18 **** Incremental Build of configuration Default for project 1010Z_Skills ****
+make all 
+make[1]: Nothing to be done for `all'.
+15:45:39 **** Incremental Build of configuration Default for project 1010Z_Skills ****
+make all 
+make[1]: Nothing to be done for `all'.
+15:47:55 **** Incremental Build of configuration Default for project 1010Z_Skills ****
+make all 
+CC -I../include -I../src auto.c
+In file included from auto.c:2:0:
+../include/autoDefaults.h: In function 'motorsDrive':
+../include/autoDefaults.h:28:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsPivot':
+../include/autoDefaults.h:35:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsLift':
+../include/autoDefaults.h:49:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsClaw':
+../include/autoDefaults.h:56:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'go':
+../include/autoDefaults.h:105:11: warning: 'outputFR' may be used uninitialized in this function [-Wuninitialized]
+../include/autoDefaults.h:107:11: warning: 'outputFL' may be used uninitialized in this function [-Wuninitialized]
+../include/autoDefaults.h:106:11: warning: 'outputBR' may be used uninitialized in this function [-Wmaybe-uninitialized]
+../include/autoDefaults.h:108:11: warning: 'outputBL' may be used uninitialized in this function [-Wmaybe-uninitialized]
+CC -I../include -I../src init.c
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  15576	      0	   3944	  19520	   4c40	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+15:49:08 **** Incremental Build of configuration Default for project 1010Z_Skills ****
+make all 
+CC -I../include -I../src auto.c
+In file included from auto.c:2:0:
+../include/autoDefaults.h: In function 'motorsDrive':
+../include/autoDefaults.h:28:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsPivot':
+../include/autoDefaults.h:35:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsLift':
+../include/autoDefaults.h:49:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsClaw':
+../include/autoDefaults.h:56:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'go':
+../include/autoDefaults.h:105:11: warning: 'outputFR' may be used uninitialized in this function [-Wuninitialized]
+../include/autoDefaults.h:107:11: warning: 'outputFL' may be used uninitialized in this function [-Wuninitialized]
+../include/autoDefaults.h:106:11: warning: 'outputBR' may be used uninitialized in this function [-Wmaybe-uninitialized]
+../include/autoDefaults.h:108:11: warning: 'outputBL' may be used uninitialized in this function [-Wmaybe-uninitialized]
+CC -I../include -I../src init.c
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  15528	      0	   3944	  19472	   4c10	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+15:49:53 **** Incremental Build of configuration Default for project 1010Z_Skills ****
+make all 
+CC -I../include -I../src auto.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  15500	      0	   3944	  19444	   4bf4	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+15:50:40 **** Incremental Build of configuration Default for project 1010Z_Skills ****
+make all 
+CC -I../include -I../src auto.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  15500	      0	   3944	  19444	   4bf4	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+15:52:24 **** Incremental Build of configuration Default for project 1010Z_Skills ****
+make all 
+CC -I../include -I../src auto.c
+In file included from auto.c:2:0:
+../include/autoDefaults.h: In function 'motorsDrive':
+../include/autoDefaults.h:28:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsPivot':
+../include/autoDefaults.h:35:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsLift':
+../include/autoDefaults.h:49:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsClaw':
+../include/autoDefaults.h:56:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'go':
+../include/autoDefaults.h:105:11: warning: 'outputFR' may be used uninitialized in this function [-Wuninitialized]
+../include/autoDefaults.h:107:11: warning: 'outputFL' may be used uninitialized in this function [-Wuninitialized]
+../include/autoDefaults.h:106:11: warning: 'outputBR' may be used uninitialized in this function [-Wmaybe-uninitialized]
+../include/autoDefaults.h:108:11: warning: 'outputBL' may be used uninitialized in this function [-Wmaybe-uninitialized]
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  15552	      0	   3944	  19496	   4c28	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+15:55:51 **** Incremental Build of configuration Default for project 1010Z_Skills ****
+make all 
+CC -I../include -I../src auto.c
+In file included from auto.c:2:0:
+../include/autoDefaults.h: In function 'motorsDrive':
+../include/autoDefaults.h:28:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsPivot':
+../include/autoDefaults.h:35:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsLift':
+../include/autoDefaults.h:49:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsClaw':
+../include/autoDefaults.h:56:6: warning: type of 'power' defaults to 'int' [enabled by default]
+auto.c: In function 'autonomous':
+auto.c:30:13: warning: unused variable 'clawTaskHandler' [-Wunused-variable]
+In file included from auto.c:2:0:
+../include/autoDefaults.h: In function 'go':
+../include/autoDefaults.h:105:11: warning: 'outputFR' may be used uninitialized in this function [-Wuninitialized]
+../include/autoDefaults.h:107:11: warning: 'outputFL' may be used uninitialized in this function [-Wuninitialized]
+../include/autoDefaults.h:106:11: warning: 'outputBR' may be used uninitialized in this function [-Wmaybe-uninitialized]
+../include/autoDefaults.h:108:11: warning: 'outputBL' may be used uninitialized in this function [-Wmaybe-uninitialized]
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  15672	      0	   3944	  19616	   4ca0	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+15:56:08 **** Incremental Build of configuration Default for project 1010Z_Skills ****
+make all 
+make[1]: Nothing to be done for `all'.
+15:56:10 **** Incremental Build of configuration Default for project 1010Z_Skills ****
+make all 
+make[1]: Nothing to be done for `all'.
+15:56:21 **** Incremental Build of configuration Default for project 1010Z_Skills ****
+make all 
+make[1]: Nothing to be done for `all'.
+15:56:28 **** Incremental Build of configuration Default for project 1010Z_Skills ****
+make all 
+make[1]: Nothing to be done for `all'.
+15:58:16 **** Incremental Build of configuration Default for project 1010Z_Skills ****
+make all 
+CC -I../include -I../src auto.c
+In file included from auto.c:2:0:
+../include/autoDefaults.h: In function 'motorsDrive':
+../include/autoDefaults.h:28:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsPivot':
+../include/autoDefaults.h:35:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsLift':
+../include/autoDefaults.h:49:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsClaw':
+../include/autoDefaults.h:56:6: warning: type of 'power' defaults to 'int' [enabled by default]
+auto.c: In function 'autonomous':
+auto.c:32:13: warning: unused variable 'clawTaskHandler' [-Wunused-variable]
+In file included from auto.c:2:0:
+../include/autoDefaults.h: In function 'go':
+../include/autoDefaults.h:105:11: warning: 'outputFR' may be used uninitialized in this function [-Wuninitialized]
+../include/autoDefaults.h:107:11: warning: 'outputFL' may be used uninitialized in this function [-Wuninitialized]
+../include/autoDefaults.h:106:11: warning: 'outputBR' may be used uninitialized in this function [-Wmaybe-uninitialized]
+../include/autoDefaults.h:108:11: warning: 'outputBL' may be used uninitialized in this function [-Wmaybe-uninitialized]
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  15728	      0	   3944	  19672	   4cd8	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+15:58:22 **** Incremental Build of configuration Default for project 1010Z_Skills ****
+make all 
+make[1]: Nothing to be done for `all'.
+15:58:48 **** Incremental Build of configuration Default for project 1010Z_Skills ****
+make all 
+CC -I../include -I../src auto.c
+In file included from auto.c:2:0:
+../include/autoDefaults.h: In function 'motorsDrive':
+../include/autoDefaults.h:28:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsPivot':
+../include/autoDefaults.h:35:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsLift':
+../include/autoDefaults.h:49:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsClaw':
+../include/autoDefaults.h:56:6: warning: type of 'power' defaults to 'int' [enabled by default]
+auto.c: In function 'autonomous':
+auto.c:31:13: warning: unused variable 'clawTaskHandler' [-Wunused-variable]
+In file included from auto.c:2:0:
+../include/autoDefaults.h: In function 'go':
+../include/autoDefaults.h:105:11: warning: 'outputFR' may be used uninitialized in this function [-Wuninitialized]
+../include/autoDefaults.h:107:11: warning: 'outputFL' may be used uninitialized in this function [-Wuninitialized]
+../include/autoDefaults.h:106:11: warning: 'outputBR' may be used uninitialized in this function [-Wmaybe-uninitialized]
+../include/autoDefaults.h:108:11: warning: 'outputBL' may be used uninitialized in this function [-Wmaybe-uninitialized]
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  15712	      0	   3944	  19656	   4cc8	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+16:01:15 **** Incremental Build of configuration Default for project 1010Z_Skills ****
+make all 
+CC -I../include -I../src auto.c
+In file included from auto.c:2:0:
+../include/autoDefaults.h: In function 'motorsDrive':
+../include/autoDefaults.h:28:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsPivot':
+../include/autoDefaults.h:35:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsLift':
+../include/autoDefaults.h:49:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsClaw':
+../include/autoDefaults.h:56:6: warning: type of 'power' defaults to 'int' [enabled by default]
+auto.c: In function 'autonomous':
+auto.c:34:13: warning: unused variable 'clawTaskHandler' [-Wunused-variable]
+In file included from auto.c:2:0:
+../include/autoDefaults.h: In function 'go':
+../include/autoDefaults.h:105:11: warning: 'outputFR' may be used uninitialized in this function [-Wuninitialized]
+../include/autoDefaults.h:107:11: warning: 'outputFL' may be used uninitialized in this function [-Wuninitialized]
+../include/autoDefaults.h:106:11: warning: 'outputBR' may be used uninitialized in this function [-Wmaybe-uninitialized]
+../include/autoDefaults.h:108:11: warning: 'outputBL' may be used uninitialized in this function [-Wmaybe-uninitialized]
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  17504	      0	   4320	  21824	   5540	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+16:04:05 **** Incremental Build of configuration Default for project 1010Z_Skills ****
+make all 
+CC -I../include -I../src auto.c
+In file included from auto.c:2:0:
+../include/autoDefaults.h: In function 'motorsDrive':
+../include/autoDefaults.h:28:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsPivot':
+../include/autoDefaults.h:35:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsLift':
+../include/autoDefaults.h:49:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsClaw':
+../include/autoDefaults.h:56:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'go':
+../include/autoDefaults.h:107:24: error: 'outputbL' undeclared (first use in this function)
+../include/autoDefaults.h:107:24: note: each undeclared identifier is reported only once for each function it appears in
+../include/autoDefaults.h:69:18: warning: unused variable 'outputFR' [-Wunused-variable]
+../include/autoDefaults.h:69:8: warning: unused variable 'outputFL' [-Wunused-variable]
+auto.c: In function 'autonomous':
+auto.c:34:13: warning: unused variable 'clawTaskHandler' [-Wunused-variable]
+make[1]: *** [../bin/auto.o] Error 1
+make: *** [src] Error 2
+16:04:08 **** Incremental Build of configuration Default for project 1010Z_Skills ****
+make all 
+CC -I../include -I../src auto.c
+In file included from auto.c:2:0:
+../include/autoDefaults.h: In function 'motorsDrive':
+../include/autoDefaults.h:28:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsPivot':
+../include/autoDefaults.h:35:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsLift':
+../include/autoDefaults.h:49:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsClaw':
+../include/autoDefaults.h:56:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'go':
+../include/autoDefaults.h:69:18: warning: unused variable 'outputFR' [-Wunused-variable]
+../include/autoDefaults.h:69:8: warning: unused variable 'outputFL' [-Wunused-variable]
+auto.c: In function 'autonomous':
+auto.c:34:13: warning: unused variable 'clawTaskHandler' [-Wunused-variable]
+In file included from auto.c:2:0:
+../include/autoDefaults.h: In function 'go':
+../include/autoDefaults.h:105:11: warning: 'outputBR' may be used uninitialized in this function [-Wmaybe-uninitialized]
+../include/autoDefaults.h:107:11: warning: 'outputBL' may be used uninitialized in this function [-Wmaybe-uninitialized]
+CC -I../include -I../src init.c
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  17496	      0	   4320	  21816	   5538	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+16:04:40 **** Incremental Build of configuration Default for project 1010Z_Skills ****
+make all 
+CC -I../include -I../src auto.c
+In file included from auto.c:2:0:
+../include/autoDefaults.h: In function 'motorsDrive':
+../include/autoDefaults.h:28:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsPivot':
+../include/autoDefaults.h:35:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsLift':
+../include/autoDefaults.h:49:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsClaw':
+../include/autoDefaults.h:56:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'go':
+../include/autoDefaults.h:69:18: warning: unused variable 'outputFR' [-Wunused-variable]
+../include/autoDefaults.h:69:8: warning: unused variable 'outputFL' [-Wunused-variable]
+auto.c: In function 'autonomous':
+auto.c:34:13: warning: unused variable 'clawTaskHandler' [-Wunused-variable]
+In file included from auto.c:2:0:
+../include/autoDefaults.h: In function 'go':
+../include/autoDefaults.h:106:24: warning: 'outputBR' may be used uninitialized in this function [-Wmaybe-uninitialized]
+../include/autoDefaults.h:107:11: warning: 'outputBL' may be used uninitialized in this function [-Wmaybe-uninitialized]
+CC -I../include -I../src init.c
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  17504	      0	   4320	  21824	   5540	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+16:07:15 **** Incremental Build of configuration Default for project 1010Z_Skills ****
+make all 
+CC -I../include -I../src auto.c
+In file included from auto.c:2:0:
+../include/autoDefaults.h: In function 'motorsDrive':
+../include/autoDefaults.h:28:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsPivot':
+../include/autoDefaults.h:35:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsLift':
+../include/autoDefaults.h:49:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsClaw':
+../include/autoDefaults.h:56:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'go':
+../include/autoDefaults.h:69:18: warning: unused variable 'outputFR' [-Wunused-variable]
+../include/autoDefaults.h:69:8: warning: unused variable 'outputFL' [-Wunused-variable]
+auto.c: In function 'autonomous':
+auto.c:34:13: warning: unused variable 'clawTaskHandler' [-Wunused-variable]
+In file included from auto.c:2:0:
+../include/autoDefaults.h: In function 'go':
+../include/autoDefaults.h:106:24: warning: 'outputBR' may be used uninitialized in this function [-Wmaybe-uninitialized]
+../include/autoDefaults.h:107:11: warning: 'outputBL' may be used uninitialized in this function [-Wmaybe-uninitialized]
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  17504	      0	   4320	  21824	   5540	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+16:24:13 **** Incremental Build of configuration Default for project 1010Z_Skills ****
+make all 
+CC -I../include -I../src auto.c
+In file included from auto.c:2:0:
+../include/autoDefaults.h: In function 'motorsDrive':
+../include/autoDefaults.h:28:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsPivot':
+../include/autoDefaults.h:35:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsLift':
+../include/autoDefaults.h:49:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsClaw':
+../include/autoDefaults.h:56:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'go':
+../include/autoDefaults.h:69:18: warning: unused variable 'outputFR' [-Wunused-variable]
+../include/autoDefaults.h:69:8: warning: unused variable 'outputFL' [-Wunused-variable]
+auto.c: In function 'autonomous':
+auto.c:35:13: warning: unused variable 'clawTaskHandler' [-Wunused-variable]
+In file included from auto.c:2:0:
+../include/autoDefaults.h: In function 'go':
+../include/autoDefaults.h:106:24: warning: 'outputBR' may be used uninitialized in this function [-Wmaybe-uninitialized]
+../include/autoDefaults.h:107:11: warning: 'outputBL' may be used uninitialized in this function [-Wmaybe-uninitialized]
+CC -I../include -I../src init.c
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  15872	      0	   4320	  20192	   4ee0	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+16:25:28 **** Incremental Build of configuration Default for project 1010Z_Skills ****
+make all 
+CC -I../include -I../src auto.c
+In file included from auto.c:2:0:
+../include/autoDefaults.h: In function 'motorsDrive':
+../include/autoDefaults.h:28:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsPivot':
+../include/autoDefaults.h:35:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsLift':
+../include/autoDefaults.h:49:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsClaw':
+../include/autoDefaults.h:56:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'go':
+../include/autoDefaults.h:69:18: warning: unused variable 'outputFR' [-Wunused-variable]
+../include/autoDefaults.h:69:8: warning: unused variable 'outputFL' [-Wunused-variable]
+../include/autoDefaults.h: In function 'drive':
+../include/autoDefaults.h:124:47: error: expected ')' before ';' token
+../include/autoDefaults.h:132:2: error: expected ';' before '}' token
+auto.c: In function 'autonomous':
+auto.c:35:13: warning: unused variable 'clawTaskHandler' [-Wunused-variable]
+make[1]: *** [../bin/auto.o] Error 1
+make: *** [src] Error 2
+16:25:36 **** Incremental Build of configuration Default for project 1010Z_Skills ****
+make all 
+CC -I../include -I../src auto.c
+In file included from auto.c:2:0:
+../include/autoDefaults.h: In function 'motorsDrive':
+../include/autoDefaults.h:28:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsPivot':
+../include/autoDefaults.h:35:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsLift':
+../include/autoDefaults.h:49:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsClaw':
+../include/autoDefaults.h:56:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'go':
+../include/autoDefaults.h:69:18: warning: unused variable 'outputFR' [-Wunused-variable]
+../include/autoDefaults.h:69:8: warning: unused variable 'outputFL' [-Wunused-variable]
+../include/autoDefaults.h: In function 'drive':
+../include/autoDefaults.h:124:47: error: expected ')' before ';' token
+../include/autoDefaults.h:132:2: error: expected ';' before '}' token
+auto.c: In function 'autonomous':
+auto.c:35:13: warning: unused variable 'clawTaskHandler' [-Wunused-variable]
+make[1]: *** [../bin/auto.o] Error 1
+make: *** [src] Error 2
+16:26:17 **** Incremental Build of configuration Default for project 1010Z_Skills ****
+make all 
+CC -I../include -I../src auto.c
+In file included from auto.c:2:0:
+../include/autoDefaults.h: In function 'motorsDrive':
+../include/autoDefaults.h:28:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsPivot':
+../include/autoDefaults.h:35:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsLift':
+../include/autoDefaults.h:49:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsClaw':
+../include/autoDefaults.h:56:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'go':
+../include/autoDefaults.h:69:18: warning: unused variable 'outputFR' [-Wunused-variable]
+../include/autoDefaults.h:69:8: warning: unused variable 'outputFL' [-Wunused-variable]
+auto.c: In function 'autonomous':
+auto.c:35:13: warning: unused variable 'clawTaskHandler' [-Wunused-variable]
+In file included from auto.c:2:0:
+../include/autoDefaults.h: In function 'go':
+../include/autoDefaults.h:106:24: warning: 'outputBR' may be used uninitialized in this function [-Wmaybe-uninitialized]
+../include/autoDefaults.h:107:11: warning: 'outputBL' may be used uninitialized in this function [-Wmaybe-uninitialized]
+CC -I../include -I../src init.c
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  15904	      0	   4320	  20224	   4f00	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+16:30:26 **** Incremental Build of configuration Default for project 1010Z_Skills ****
+make all 
+make[1]: Nothing to be done for `all'.
+16:30:31 **** Incremental Build of configuration Default for project 1010Z_Skills ****
+make all 
+make[1]: Nothing to be done for `all'.
+16:32:05 **** Incremental Build of configuration Default for project 1010Z_Skills ****
+make all 
+make[1]: Nothing to be done for `all'.
+16:38:19 **** Incremental Build of configuration Default for project 1010Z_Skills ****
+make all 
+CC -I../include -I../src auto.c
+In file included from auto.c:2:0:
+../include/autoDefaults.h: In function 'motorsDrive':
+../include/autoDefaults.h:28:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsPivot':
+../include/autoDefaults.h:35:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsLift':
+../include/autoDefaults.h:49:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsClaw':
+../include/autoDefaults.h:56:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'go':
+../include/autoDefaults.h:69:18: warning: unused variable 'outputFR' [-Wunused-variable]
+../include/autoDefaults.h:69:8: warning: unused variable 'outputFL' [-Wunused-variable]
+auto.c: In function 'autonomous':
+auto.c:35:13: warning: unused variable 'clawTaskHandler' [-Wunused-variable]
+In file included from auto.c:2:0:
+../include/autoDefaults.h: In function 'go':
+../include/autoDefaults.h:106:24: warning: 'outputBR' may be used uninitialized in this function [-Wmaybe-uninitialized]
+../include/autoDefaults.h:107:11: warning: 'outputBL' may be used uninitialized in this function [-Wmaybe-uninitialized]
+CC -I../include -I../src init.c
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  15904	      0	   4320	  20224	   4f00	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+16:38:29 **** Incremental Build of configuration Default for project 1010Z_Skills ****
+make all 
+make[1]: Nothing to be done for `all'.
+16:42:23 **** Incremental Build of configuration Default for project 1010Z_Skills ****
+make all 
+CC -I../include -I../src auto.c
+In file included from auto.c:2:0:
+../include/autoDefaults.h: In function 'motorsDrive':
+../include/autoDefaults.h:28:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsPivot':
+../include/autoDefaults.h:35:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsLift':
+../include/autoDefaults.h:49:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsClaw':
+../include/autoDefaults.h:56:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'go':
+../include/autoDefaults.h:69:18: warning: unused variable 'outputFR' [-Wunused-variable]
+../include/autoDefaults.h:69:8: warning: unused variable 'outputFL' [-Wunused-variable]
+auto.c: In function 'autonomous':
+auto.c:35:13: warning: unused variable 'clawTaskHandler' [-Wunused-variable]
+In file included from auto.c:2:0:
+../include/autoDefaults.h: In function 'go':
+../include/autoDefaults.h:106:24: warning: 'outputBR' may be used uninitialized in this function [-Wmaybe-uninitialized]
+../include/autoDefaults.h:107:11: warning: 'outputBL' may be used uninitialized in this function [-Wmaybe-uninitialized]
+CC -I../include -I../src init.c
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  15904	      0	   4320	  20224	   4f00	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+16:42:47 **** Incremental Build of configuration Default for project 1010Z_Skills ****
+make all 
+make[1]: Nothing to be done for `all'.
+16:44:57 **** Incremental Build of configuration Default for project 1010Z_Skills ****
+make all 
+CC -I../include -I../src auto.c
+In file included from auto.c:2:0:
+../include/autoDefaults.h: In function 'motorsDrive':
+../include/autoDefaults.h:28:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsPivot':
+../include/autoDefaults.h:35:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsLift':
+../include/autoDefaults.h:49:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsClaw':
+../include/autoDefaults.h:56:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'go':
+../include/autoDefaults.h:69:18: warning: unused variable 'outputFR' [-Wunused-variable]
+../include/autoDefaults.h:69:8: warning: unused variable 'outputFL' [-Wunused-variable]
+auto.c: In function 'autonomous':
+auto.c:35:13: warning: unused variable 'clawTaskHandler' [-Wunused-variable]
+In file included from auto.c:2:0:
+../include/autoDefaults.h: In function 'go':
+../include/autoDefaults.h:106:24: warning: 'outputBR' may be used uninitialized in this function [-Wmaybe-uninitialized]
+../include/autoDefaults.h:107:11: warning: 'outputBL' may be used uninitialized in this function [-Wmaybe-uninitialized]
+CC -I../include -I../src init.c
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  15904	      0	   4320	  20224	   4f00	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+16:45:13 **** Incremental Build of configuration Default for project 1010Z_Skills ****
+make all 
+make[1]: Nothing to be done for `all'.
+16:47:51 **** Incremental Build of configuration Default for project 1010Z_Skills ****
+make all 
+CC -I../include -I../src auto.c
+In file included from auto.c:2:0:
+../include/autoDefaults.h: In function 'motorsDrive':
+../include/autoDefaults.h:28:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsPivot':
+../include/autoDefaults.h:35:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsLift':
+../include/autoDefaults.h:49:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsClaw':
+../include/autoDefaults.h:56:6: warning: type of 'power' defaults to 'int' [enabled by default]
+auto.c: In function 'autonomous':
+auto.c:35:13: warning: unused variable 'clawTaskHandler' [-Wunused-variable]
+CC -I../include -I../src init.c
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  15904	      0	   4320	  20224	   4f00	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+16:48:05 **** Incremental Build of configuration Default for project 1010Z_Skills ****
+make all 
+make[1]: Nothing to be done for `all'.
+16:49:08 **** Incremental Build of configuration Default for project 1010Z_Skills ****
+make all 
+CC -I../include -I../src auto.c
+In file included from auto.c:2:0:
+../include/autoDefaults.h: In function 'motorsDrive':
+../include/autoDefaults.h:28:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsPivot':
+../include/autoDefaults.h:35:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsLift':
+../include/autoDefaults.h:49:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsClaw':
+../include/autoDefaults.h:56:6: warning: type of 'power' defaults to 'int' [enabled by default]
+auto.c: In function 'autonomous':
+auto.c:35:13: warning: unused variable 'clawTaskHandler' [-Wunused-variable]
+CC -I../include -I../src init.c
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  15904	      0	   4320	  20224	   4f00	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
+16:49:15 **** Incremental Build of configuration Default for project 1010Z_Skills ****
+make all 
+make[1]: Nothing to be done for `all'.
+19:30:44 **** Incremental Build of configuration Default for project 1010Z_Skills ****
+make all 
+CC -I../include -I../src auto.c
+In file included from auto.c:2:0:
+../include/autoDefaults.h: In function 'motorsDrive':
+../include/autoDefaults.h:28:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsPivot':
+../include/autoDefaults.h:35:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsLift':
+../include/autoDefaults.h:49:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsClaw':
+../include/autoDefaults.h:56:6: warning: type of 'power' defaults to 'int' [enabled by default]
+auto.c: In function 'autonomous':
+auto.c:35:13: warning: unused variable 'clawTaskHandler' [-Wunused-variable]
+CC -I../include -I../src init.c
+init.c: In function 'initialize':
+init.c:43:2: error: implicit declaration of function 'econderInit' [-Werror=implicit-function-declaration]
+init.c:43:11: warning: assignment makes pointer from integer without a cast [enabled by default]
+cc1.exe: some warnings being treated as errors
+make[1]: *** [../bin/init.o] Error 1
+make: *** [src] Error 2
+19:31:06 **** Incremental Build of configuration Default for project 1010Z_Skills ****
+make all 
+CC -I../include -I../src auto.c
+In file included from auto.c:2:0:
+../include/autoDefaults.h: In function 'motorsDrive':
+../include/autoDefaults.h:28:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsPivot':
+../include/autoDefaults.h:35:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsLift':
+../include/autoDefaults.h:49:6: warning: type of 'power' defaults to 'int' [enabled by default]
+../include/autoDefaults.h: In function 'motorsClaw':
+../include/autoDefaults.h:56:6: warning: type of 'power' defaults to 'int' [enabled by default]
+auto.c: In function 'autonomous':
+auto.c:35:13: warning: unused variable 'clawTaskHandler' [-Wunused-variable]
+CC -I../include -I../src init.c
+init.c: In function 'initialize':
+init.c:43:2: error: implicit declaration of function 'enconderInit' [-Werror=implicit-function-declaration]
+init.c:43:11: warning: assignment makes pointer from integer without a cast [enabled by default]
+cc1.exe: some warnings being treated as errors
+make[1]: *** [../bin/init.o] Error 1
+make: *** [src] Error 2
+19:31:31 **** Incremental Build of configuration Default for project 1010Z_Skills ****
+make all 
+CC -I../include -I../src init.c
+CC -I../include -I../src opcontrol.c
+LN ./bin/auto.o ./bin/init.o ./bin/opcontrol.o ./firmware/libccos.a -lgcc -lm to bin/output.elf
+   text	   data	    bss	    dec	    hex	filename
+  15944	      0	   4328	  20272	   4f30	./bin/output.elf
+arm-none-eabi-objcopy ./bin/output.elf -O binary ./bin/output.bin
