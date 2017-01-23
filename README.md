@@ -1,7 +1,7 @@
 # Ten Ton Robotics Repo
 
-> Welcome to the Ten Ton Robotics code base
-
+> Welcome to the Ten Ton Robotics code base.
+> This is the central repository for the 2016-17 FRC and VEX seasons...
 
 ## Contributing
 
@@ -11,19 +11,19 @@ fork of the repo under the `master` branch
 * When ready to add you changes to the main repo, push your changes to the `/stage` branch.
 * Then submit a pull request.
 
-
 ## File Structure
-
 
 ```
 .
 +-- FIRST
-|   +-- 6364/
+|   +-- ProjectA
+|   +-- ProjectB
+|   +-- Projectc
+|   +-- ...
 +-- VEX
 |   +-- 1010A/
 |   +-- 1010B/
 |   +-- 1010C/
 |   +-- ...
-	   
-```
 
+```
